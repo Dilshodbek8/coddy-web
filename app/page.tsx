@@ -6,8 +6,8 @@ export default function Home() {
     <div className="container">
       <h1>home works</h1>
       <div className="content">
-        {tasks.tasks.map((task) => (
-          <a className="task" href={task.link}>
+        {tasks.tasks.map((task, i) => (
+          <a key={i} className="task" href={task.link}>
             {task.title}
           </a>
         ))}
